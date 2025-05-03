@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logoImg from "/logo.png";
 import { CiSearch } from "react-icons/ci";
 
@@ -61,7 +61,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-primary text-black">Login</a>
+        <Link to={'/login'} className="btn btn-primary text-black">Login</Link>
       </div>
     </div>
   );
