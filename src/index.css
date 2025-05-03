@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #F9A51A;
+  --color-base-200: #f3f3f3;
+}
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+a.active{
+  @apply bg-primary
+  text-black
+}
