@@ -1,18 +1,26 @@
-import React from "react";
+import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import logoImg from "/logo.png";
 import { CiSearch } from "react-icons/ci";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+  const { user } = use(AuthContext);
   const links = (
     <>
       <NavLink className={"mr-5 px-1.5 rounded-md text-secondary"} to={"/home"}>
         Home
       </NavLink>
-      <NavLink className={"mr-5 px-1.5 rounded-md  text-secondary"} to={"/destination"}>
+      <NavLink
+        className={"mr-5 px-1.5 rounded-md  text-secondary"}
+        to={"/destination"}
+      >
         Destination
       </NavLink>
-      <NavLink className={"mr-5 px-1.5 rounded-md  text-secondary"} to={"/blogs"}>
+      <NavLink
+        className={"mr-5 px-1.5 rounded-md  text-secondary"}
+        to={"/blogs"}
+      >
         Blogs
       </NavLink>
       <NavLink className={"px-1.5 rounded-md  text-secondary"} to={"/contact"}>
@@ -49,19 +57,21 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-       <div className="bg-white/80 p-1 rounded">
-       <img className="w-16" src={logoImg} alt="logo" />
-       </div>
+        <div className="bg-white/80 p-1 rounded">
+          <img className="w-16" src={logoImg} alt="logo" />
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <label className="text-white flex mr-5 text-xs px-3 py-1 rounded-md gap-2">
-        <CiSearch />
+          <CiSearch />
           <input type="search" placeholder="Search your destination" />
         </label>
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <Link to={'/login'} className="btn btn-primary text-black">Login</Link>
+        <Link to={"/login"} className="btn btn-primary text-black">
+          {user ? "Logout" : "Login"}
+        </Link>
       </div>
     </div>
   );
