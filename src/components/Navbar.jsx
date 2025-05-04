@@ -6,16 +6,16 @@ import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
   const links = (
     <>
-      <NavLink className={"mr-5 px-1.5 rounded-md text-white"} to={"/home"}>
+      <NavLink className={"mr-5 px-1.5 rounded-md text-secondary"} to={"/home"}>
         Home
       </NavLink>
-      <NavLink className={"mr-5 px-1.5 rounded-md  text-white"} to={"/destination"}>
+      <NavLink className={"mr-5 px-1.5 rounded-md  text-secondary"} to={"/destination"}>
         Destination
       </NavLink>
-      <NavLink className={"mr-5 px-1.5 rounded-md  text-white"} to={"/blogs"}>
+      <NavLink className={"mr-5 px-1.5 rounded-md  text-secondary"} to={"/blogs"}>
         Blogs
       </NavLink>
-      <NavLink className={"px-1.5 rounded-md  text-white"} to={"/contact"}>
+      <NavLink className={"px-1.5 rounded-md  text-secondary"} to={"/contact"}>
         Contact
       </NavLink>
     </>
@@ -54,7 +54,7 @@ const Navbar = () => {
        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <label className="text-white flex border mr-5 text-xs px-2 py-1 rounded-md gap-2">
+        <label className="text-white flex mr-5 text-xs px-3 py-1 rounded-md gap-2">
         <CiSearch />
           <input type="search" placeholder="Search your destination" />
         </label>

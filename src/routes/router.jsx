@@ -7,6 +7,7 @@ import Blogs from "../pages/Blogs";
 import Contact from "../pages/Contact";
 import News from "../pages/News";
 import Destination from "../pages/Destination";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     element: <HomeLayout></HomeLayout>,
     children: [
       {
-        path:'/home',
+        path: "/home",
         index: true,
         element: <Home></Home>,
       },
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
     ],
+  },
+  {
+    path: "/*",
+    element: <ErrorPage></ErrorPage>,
   },
 ]);
 
