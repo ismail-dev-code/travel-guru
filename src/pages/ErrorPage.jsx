@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar";
 const ErrorPage = () => {
   return (
     <>
+    <Helmet>
+                <title>Travel | Unknown</title>
+            </Helmet>
   <nav className="w-11/12 mx-auto">
   <Navbar></Navbar>
   </nav>
