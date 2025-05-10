@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { Link } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
+import Navbar from "../components/Navbar";
 
 const Register = () => {
   const { createUser} = use(AuthContext);
@@ -15,7 +16,7 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         const user = result.user;
-        alert("you have succefully created an account");
+        alert("you have successfully created an account");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -25,6 +26,8 @@ const Register = () => {
    
   };
   return (
+    <>
+      <Navbar></Navbar>
     <div className="card bg-base-100 mx-auto mt-24 w-full max-w-sm shrink-0 shadow-2xl">
       <div className="card-body">
         <form onSubmit={handleRegister}>
@@ -75,6 +78,7 @@ const Register = () => {
         </p>
       </div>
     </div>
+  </>
   );
 };
 

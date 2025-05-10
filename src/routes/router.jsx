@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Home></Home>,
       },
-      
+
       {
         path: "/blogs",
         element: <Blogs></Blogs>,
@@ -27,6 +27,8 @@ const router = createBrowserRouter([
       {
         path: "/destination",
         element: <Destination></Destination>,
+        loader: () => fetch("/data.json"),
+        hydrateFallbackElement: <p>Loading</p>
       },
       {
         path: "/news",

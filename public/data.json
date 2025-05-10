@@ -1,0 +1,89 @@
+[
+  {
+    "id": "event101",
+    "title": "Workshop on Public Speaking",
+    "category": "Workshop",
+    "date": "2025-06-28",
+    "location": "Conference Room",
+    "description": "An effective workshop on public speaking for junior and senior students.",
+    "thumbnail": "https://i.ibb.co.com/27GNL2dx/f032a530-5cb5-4a30-9db6-9e4521e27d22.jpg",
+    "image": "https://i.ibb.co.com/27GNL2dx/f032a530-5cb5-4a30-9db6-9e4521e27d22.jpg",
+    "organizer": "Self Development Club",
+    "entryFee": "$3",
+    "rating": 4.6
+  },
+
+
+    {
+      "id": "event102",
+      "title": "Inter-Class Debate Competition",
+      "category": "Debate",
+      "date": "2025-06-15",
+      "location": "Auditorium",
+      "description": "An exciting debate among students from different classes.",
+      "thumbnail": "https://i.ibb.co.com/d0Stw64t/546fc1a3-18cc-499a-9425-d7b141bc0490.jpg",
+      "image": "https://i.ibb.co.com/d0Stw64t/546fc1a3-18cc-499a-9425-d7b141bc0490.jpg",
+      "organizer": "Debate Club",
+      "entryFee": "Free",
+      "rating": 4.2
+    },
+    
+    {
+      "id": "event103",
+      "title": "Science Fair 2025",
+      "category": "Science Fair",
+      "date": "2025-06-25",
+      "location": "School Field",
+      "description": "Annual science fair showcasing student innovations and projects.",
+      "thumbnail": "https://i.ibb.co.com/yFdC9g40/f0917d84-0ed8-40f9-977b-f1203290948c.jpg",
+      "image": "https://i.ibb.co.com/yFdC9g40/f0917d84-0ed8-40f9-977b-f1203290948c.jpg",
+      "organizer": "Science Club",
+      "entryFee": "Free",
+      "rating": 4.9
+    },
+
+    
+    {
+      "id": "event104",
+      "title": "Art Exhibition",
+      "category": "Art",
+      "date": "2025-06-22",
+      "location": "Art Gallery Room",
+      "description": "An exhibition featuring paintings and crafts made by students.",
+      "thumbnail": "https://i.ibb.co.com/wNFjsFwp/5e563073-a7e1-499f-9a9e-990d6dd57b0a.jpg",
+      "image": "https://i.ibb.co.com/wNFjsFwp/5e563073-a7e1-499f-9a9e-990d6dd57b0a.jpg",
+      "organizer": "Art Club",
+      "entryFee": "$1",
+      "rating": 4.7
+    },
+
+    {
+      "id": "event105",
+      "title": "School Music Evening",
+      "category": "Music",
+      "date": "2025-06-20",
+      "location": "School Auditorium",
+      "description": "An evening of delightful music performed by the students.",
+      "thumbnail": "https://i.ibb.co.com/qMcJqrXY/istockphoto-1385087437-612x612.jpg",
+      "image": "https://i.ibb.co.com/qMcJqrXY/istockphoto-1385087437-612x612.jpg",
+      "organizer": "Cultural Club",
+      "entryFee": "$2",
+      "rating": 4.8
+    },
+
+    {
+      "id": "event106",
+      "title": "School Sports Festival 2025",
+      "category": "Sports",
+      "date": "2025-06-10",
+      "location": "School Playground",
+      "description": "Annual sports competition where students participate in various athletic events.",
+      "thumbnail": "https://i.ibb.co.com/C3b7yb8g/20b59c91-6f4c-4805-90f4-874d699234dc.jpg",
+      "image": "https://i.ibb.co.com/C3b7yb8g/20b59c91-6f4c-4805-90f4-874d699234dc.jpg",
+      "organizer": "Physical Education Department",
+      "entryFee": "Free",
+      "rating": 4.5
+    }
+
+
+  ]
